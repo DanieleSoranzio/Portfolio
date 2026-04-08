@@ -184,10 +184,8 @@
     tick(); setInterval(tick, 1000);
 })();
     (function(){
-    const USER = 'Soransen';
-    const KEY  = '99fab9592df92f8f434b8eaed11f5da0';
     function fetchTrack(){
-    fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${USER}&api_key=${KEY}&limit=1&format=json`)
+        fetch('/.netlify/functions/lastfm')
     .then(r=>r.json())
     .then(d=>{
     const t = d.recenttracks.track[0];
