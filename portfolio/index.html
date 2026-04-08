@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daniele Soranzio — Game Programmer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="progress"></div>
+
+<!-- NAV — file tab style -->
+<nav>
+  <a href="#hero" class="nav-logo"><span class="logo-dim">~/</span>daniele-soranzio</a>
+  <ul class="nav-links">
+    <li><a href="#about">about.cpp<span class="tab-dot"></span></a></li>
+    <li><a href="#skills">skills.h<span class="tab-dot"></span></a></li>
+    <li><a href="#projects">projects.md<span class="tab-dot"></span></a></li>
+    <li><a href="#contact">contact.rs<span class="tab-dotLive"></span></a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="nav-spotify" id="lfmWidget">
+      <svg width="11" height="11" viewBox="0 0 24 24" fill="#1DB954" xmlns="http://www.w3.org/2000/svg"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+      <div class="lfm-marquee">
+        <span class="lfm-track" id="lfmTrack">—</span>
+      </div>
+    </div>
+    <div class="nav-clock" id="navClock"></div>
+  </div>
+</nav>
+
+<!-- 01 HERO -->
+<div class="panel-wrap"><section class="panel" id="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <p class="hero-eyebrow"><span id="typewriter"></span><span id="cursor"></span></p>
+      <div>
+        <h1 class="hero-name">Daniele<br>Soranzio<span class="dim">.</span></h1>
+      </div>
+      <div class="hero-role">
+        <span class="kw">class</span> <span style="color:#d2a8ff">GameProgrammer</span> <span style="color:var(--faint)">{</span><br>
+        &nbsp;&nbsp;<span class="kw">engine</span>: <span class="str">"Unity"</span> | <span class="str">"Unreal"</span><span style="color:var(--faint)">;</span><br>
+        &nbsp;&nbsp;<span class="kw">experience</span>: <span class="num">3</span> <span style="color:var(--faint)">// academic years</span><br>
+        <span style="color:var(--faint)">}</span>
+      </div>
+      <div class="hero-tags">
+        <span class="hero-tag">C#</span>
+        <span class="hero-tag">C++</span>
+        <span class="hero-tag">GLSL</span>
+        <span class="hero-tag">HLSL</span>
+        <span class="hero-tag">Unity</span>
+        <span class="hero-tag">Unreal Engine</span>
+        <span class="hero-tag">Git</span>
+      </div>
+      <div class="hero-certs">
+        <a href="Assets/cert-event.pdf" target="_blank" class="hero-cert">Game Programming — Event Horizon School, 2022/25 ↗</a>
+        <a href="Assets/cert-hlsludemy.pdf" target="_blank" class="hero-cert">Learn HLSL Shaders from Scratch — Udemy, 2025 ↗</a>
+        <a href="Assets/cert-glsludemy.pdf" target="_blank" class="hero-cert">Learn GLSL Shaders from Scratch — Udemy, 2026 ↗</a>
+        <a href="Assets/cert-mathudemy.pdf" target="_blank" class="hero-cert">Math For Video Games — Udemy, 2026 ↗</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-media" id="heroMedia">
+        <canvas id="gameCanvas"></canvas>
+        <span class="game-label">space / tap · double jump</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">scroll <span class="scroll-arrow">↓</span></div>
+</section></div>
+
+<!-- 02 ABOUT -->
+<div class="panel-wrap"><section class="panel" id="about">
+  <div style="width:100%">
+    <div class="section-header r"><span class="sec-num">02</span> <span class="sec-name">// about</span></div>
+    <div class="about-layout">
+      <div class="r-left">
+        <div class="about-comment">
+          <span class="c">/**</span><br>
+          &nbsp;* Building the next game.<br>
+          &nbsp;* 3 years making<br>
+          &nbsp;* precious experiences —<br>
+          &nbsp;* from general gameplay systems<br>
+          &nbsp;* to custom technical shaders.<br>
+          <span class="c">&nbsp;*/</span>
+        </div>
+        <div class="about-stats">
+          <div class="stat"><p class="stat-num">3+</p><p class="stat-label">years_exp</p></div>
+          <div class="stat"><p class="stat-num">15+</p><p class="stat-label">projects_made_with_a_team</p></div>
+          <div class="stat"><p class="stat-num">2</p><p class="stat-label">engines_mastered</p></div>
+          <div class="stat"><p class="stat-num">∞</p><p class="stat-label">code_lines</p></div>
+        </div>
+      </div>
+      <div class="about-body-code r-right">
+        <span class="kw">const</span> <span class="fn">daniele</span> <span class="pun">= {</span><br>
+        &nbsp;&nbsp;location: <span class="str">"Turin, Italy"</span><span class="pun">,</span><br>
+        &nbsp;&nbsp;focus: <span class="str">"game programmer"</span><span class="pun">,</span><br>
+        &nbsp;&nbsp;engines: <span class="pun">[</span><span class="str">"Unity"</span><span class="pun">,</span> <span class="str">"Unreal"</span><span class="pun">],</span><br>
+        &nbsp;&nbsp;shaders: <span class="pun">[</span><span class="str">"GLSL"</span><span class="pun">,</span> <span class="str">"HLSL"</span><span class="pun">],</span><br>
+        &nbsp;&nbsp;languages: <span class="pun">[</span><span class="str">"C#"</span><span class="pun">,</span> <span class="str">"C++"</span><span class="pun">],</span><br>
+        &nbsp;&nbsp;available: <span style="color:var(--green)">true</span><span class="pun">,</span><br>
+        <span class="pun">};</span><br><br>
+        <span class="cm">// currently typing </span><br>
+        <span class="cm">// 100 wpm.</span><br>
+      </div>
+    </div>
+  </div>
+</section></div>
+
+<!-- 03 SKILLS -->
+<div class="panel-wrap"><section class="panel" id="skills">
+  <div style="width:100%">
+    <div class="section-header r"><span class="sec-num">03</span> <span class="sec-name">// skills</span></div>
+    <div class="skills-layout">
+      <div class="skills-title-block r-left">
+        <div class="skills-big"><span class="dim">// </span><br>_My<br>toolkit</div>
+        <p class="skills-sub">Tools and languages<br>I reach for first.</p>
+      </div>
+      <div class="skills-groups stagger">
+        <div class="skill-group">
+          <span class="sg-label">Languages</span>
+          <div class="sg-items">
+            <span class="sg-item"><span class="sg-badge">{ }</span> C#</span>
+            <span class="sg-item"><span class="sg-badge">{ }</span> C++</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="sg-label">Engines</span>
+          <div class="sg-items">
+            <span class="sg-item"><span class="sg-badge">▶</span> Unity</span>
+            <span class="sg-item"><span class="sg-badge">◆</span> Unreal Engine</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="sg-label">Shaders</span>
+          <div class="sg-items">
+            <span class="sg-item"><span class="sg-badge">GL</span> GLSL</span>
+            <span class="sg-item"><span class="sg-badge">HL</span> HLSL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="sg-label">Version Control</span>
+          <div class="sg-items">
+            <span class="sg-item"><span class="sg-badge">⑂</span> GitHub</span>
+            <span class="sg-item"><span class="sg-badge">⑂</span> GitLab</span>
+            <span class="sg-item"><span class="sg-badge">⑂</span> Fork</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section></div>
+
+<!-- 04 PROJECTS -->
+<div class="panel-wrap"><section class="panel" id="projects">
+  <div style="width:100%">
+    <div class="section-header r"><span class="sec-num">04</span> <span class="sec-name">// projects</span></div>
+    <div class="projects-grid stagger">
+      <a class="proj" href="projects/raymarched-slime.html">
+        <span class="proj-num">01</span>
+        <span class="proj-name">Raymarched-Slime</span>
+        <span class="proj-desc">Shader specialization project solo-developed during my 3 years program in academy.</span>
+        <div style="display:flex;align-items:center">
+          <div class="proj-tags"><span class="proj-tag">Unreal Engine</span><span class="proj-tag">C++</span><span class="proj-tag">HLSL</span></div>
+          <span class="proj-arrow">→</span>
+        </div>
+      </a>
+      <a class="proj" href="projects/ffta.html">
+        <span class="proj-num">02</span>
+        <span class="proj-name">Final Fantasy Tactics Advanced</span>
+        <span class="proj-desc">Remake of a single battle of FFTA focusing on the A* algorithm.</span>
+        <div style="display:flex;align-items:center">
+          <div class="proj-tags"><span class="proj-tag">Unity</span><span class="proj-tag">C#</span></div>
+          <span class="proj-arrow">→</span>
+        </div>
+      </a>
+      <a class="proj" href="projects/Project-Symbiosis.html">
+        <span class="proj-num">03</span>
+        <span class="proj-name">Project Symbiosis</span>
+        <span class="proj-desc">Group Project made in the last year of my academy program</span>
+        <div style="display:flex;align-items:center">
+          <div class="proj-tags"><span class="proj-tag">C++</span><span class="proj-tag">HLSL</span><span class="proj-tag">Unreal Engine</span><span class="proj-tag">GLSL</span></div>
+          <span class="proj-arrow">→</span>
+        </div>
+      </a>
+      <a class="proj" href="projects/demo-001.html">
+        <span class="proj-num">04</span>
+        <span class="proj-name">Demo-001</span>
+        <span class="proj-desc">2D personal project solo developed after academic program, focusing on modular and solid systems .</span>
+        <div style="display:flex;align-items:center">
+          <div class="proj-tags"><span class="proj-tag">Unity</span><span class="proj-tag">C#</span><span class="proj-tag">HLSL</span></div>
+          <span class="proj-arrow">→</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section></div>
+
+<!-- 05 CONTACT -->
+<div class="panel-wrap"><section class="panel" id="contact">
+  <div style="width:100%;display:flex;flex-direction:column;">
+    <div class="section-header r"><span class="sec-num">05</span> <span class="sec-name">// contact</span></div>
+    <div class="contact-layout">
+      <div class="r-left">
+        <h2 class="contact-headline">let's build<br><span class="dim">something</span><br>together.</h2>
+        <p class="contact-sub">Open to new projects, collaborations<br>and full-time roles.</p>
+        <a href="mailto:danielesoranzio.gamedev@gmail.com" target="_blank" class="contact-email-link">say_hello() →</a>
+      </div>
+      <div class="contact-links r-right">
+        <a href="https://monkeytype.com/profile/Soransen"  target="_blank" class="contact-link">MonkeyType <span class="cl-arr">↗</span></a>
+        <a href="https://soransen.itch.io/"  target="_blank" class="contact-link">Itch.io <span class="cl-arr">↗</span></a>
+        <a href="https://github.com/DanieleSoranzio" target="_blank" class="contact-link">GitHub <span class="cl-arr">↗</span></a>
+        <a href="https://www.linkedin.com/in/daniele-soranzio/" target="_blank" class="contact-link">LinkedIn <span class="cl-arr">↗</span></a>
+        <a href="Assets/Resume%20Daniele-Soranzio.pdf"  target="_blank" class="contact-link">Resume / CV <span class="cl-arr">↗</span></a>
+      </div>
+    </div>
+    <div class="contact-footer">
+      <span class="ft">© 2026 Daniele Soranzio</span>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.3rem;">
+        <span class="ft">// built with HTML &amp; CSS</span>
+        <a href="Assets/cert-event.pdf" target="_blank" class="cert-item">Game Programming — Event Horizon School, 2022/25 ↗</a>
+        <a href="Assets/cert-hlsludemy.pdf" target="_blank" class="cert-item">Learn HLSL Shaders from Scratch — Udemy, 2025 ↗</a>
+        <a href="Assets/cert-glsludemy.pdf" target="_blank" class="cert-item">Learn GLSL Shaders from Scratch — Udemy, 2026 ↗</a>
+        <a href="Assets/cert-mathudemy.pdf" target="_blank" class="cert-item">Math For Video Games — Udemy, 2026 ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raymarched Slime — Daniele Soranzio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-back">← portfolio</a>
+  <div class="nav-breadcrumb">
+    <span>projects</span><span>/</span><span class="current">Raymarched-Slime</span>
+  </div>
+  <div class="nav-right">
+    <a href="https://github.com/DanieleSoranzio/Slime-Raymarch-Plugin" target="_blank">GitHub ↗</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <div class="proj-hero">
+    <div class="proj-path">
+      <a href="../index.html" class="nav-back">← portfolio</a>
+      <span>~/projects</span><span class="sep"></span>
+      <span class="file">raymarched-slime.cpp</span>
+    </div>
+    <h1 class="proj-title">Raymarched-Slime<span class="dim">.</span></h1>
+    <div class="proj-meta">
+      <span><span class="label">year:</span>2025</span>
+      <span><span class="label">role:</span>sole developer</span>
+      <span><span class="label">duration:</span>2 months</span>
+    </div>
+    <div class="proj-tags">
+      <span class="proj-tag">C++</span>
+      <span class="proj-tag">GLSL</span>
+      <span class="proj-tag">HLSL</span>
+      <span class="proj-tag">Unreal Engine</span>
+      <span class="proj-tag">ShaderToy</span>
+      <span class="proj-tag">GitHub</span>
+      <span class="proj-tag">Fork</span>
+    </div>
+  </div>
+
+  <!-- MAIN MEDIA -->
+  <div class="proj-media">
+      <img src="../Assets/Raymarched-Slime.gif" alt="Slime Showcase">
+  </div>
+
+  <!-- OVERVIEW -->
+  <div class="section">
+    <div class="section-label">// overview</div>
+    <div class="prose">
+      <p><strong>Raymarched-Slime</strong> is a real-time 3D shader plugin built in Unreal Engine.
+      The focus was on creating a custom shader rapresenting a modular slime —
+      using raymarch, SDF and a small C++ architecture.</p>
+      <p>The project was made for my final test at my three years academy program. The scope was to learn more about technical shaders using HLSL. </p>
+    </div>
+  </div>
+
+  <!-- TECHNICAL CHALLENGES -->
+  <div class="section">
+    <div class="section-label">// technical_challenges</div>
+    <div class="challenges">
+      <div class="challenge">
+        <span class="challenge-num">01</span>
+        <div class="challenge-text"><strong>Real-time SDF</strong> — Simulating any model using simple shapes. This has been resolved by creating a smooth union function in the shader script. This function will blend the shapes togheter creating a much complex one.</div>
+      </div>
+      <div class="challenge">
+        <span class="challenge-num">02</span>
+        <div class="challenge-text"><strong>Modular texture</strong> — Adding a texture to an unknown shape. This has been addressed using the triplanar mapping function in the shader script. This function will take the normal from each axis and wrap the texture smoothly around the slime.</div>
+      </div>
+      <div class="challenge">
+        <span class="challenge-num">03</span>
+        <div class="challenge-text"><strong>Designer friendly</strong> — Having a big amount of variables can be quite messy. In order to fix this, I've created a simple structure in C++ hiding non-used properties simplifying designer experience.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <!-- Replace placeholder divs with <img src="..."> -->
+  <div class="section">
+    <div class="section-label">// gallery</div>
+    <div class="gallery">
+      <div class="gallery-item"><img src="../Assets/CodeSnippetRaymarchTexture.png" alt="screenshot 01" style="object-position: top;"> </div>
+      <div class="gallery-item"><img src="../Assets/CodeSnippetRaymarchMap.png" alt="screenshot 02" style="object-position: top;"> </div>
+      <div class="gallery-item"><img src="../Assets/ShaderToyDemo.gif" alt="gif 03" style="object-position: top;"> </div>
+      <div class="gallery-item"><img src="../Assets/ShaderToyDemo2.gif" alt="gif 04" style="object-position: top;"> </div>
+    </div>
+  </div>
+
+  <!-- LINKS -->
+  <div class="section">
+    <div class="section-label">// links</div>
+    <div class="proj-links">
+      <a href="https://github.com/DanieleSoranzio/Slime-Raymarch-Plugin" target="_blank" class="proj-link primary">GitHub repo ↗</a>
+      <a href="https://www.shadertoy.com/view/3f3GDl" target="_blank" class="proj-link">Shadertoy demo ↗</a>
+      <a href="https://docs.google.com/document/d/1RNN5VCz5y-dPrh2cyx9z6AJdLq4z9QbdDa7gU3am424/edit?usp=sharing" target="_blank" class="proj-link">Documentation ↗</a>
+    </div>
+  </div>
+
+  <!-- PREV / NEXT -->
+  <div class="proj-nav">
+    <!-- Questa è il prev, tenere commentato se è il primo progetto nella lista-->
+    <a href="demo-001.html" class="proj-nav-item prev">
+      <span class="proj-nav-label">← previous</span>
+      <span class="proj-nav-title">Demo-001</span>
+    </a>
+    <!-- Questa è il next, tenere commentato se è l`ultimo progetto nella lista-->
+    <a href="ffta.html" class="proj-nav-item next">
+      <span class="proj-nav-label">next →</span>
+      <span class="proj-nav-title">Final Fantasy Tactics Advanced</span> 
+    </a>
+  </div>
+</main>
+<script src="projectscript.js"></script>
+</body>
+</html>

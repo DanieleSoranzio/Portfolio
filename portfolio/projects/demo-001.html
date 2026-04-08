@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Demo-001 — Daniele Soranzio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+
+<nav>
+    <a href="../index.html" class="nav-back">← portfolio</a>
+    <div class="nav-breadcrumb">
+        <span>projects</span><span>/</span><span class="current">Demo-001</span>
+    </div>
+    <div class="nav-right">
+        <a href="https://github.com/DanieleSoranzio/Demo-001" target="_blank">GitHub ↗</a>
+    </div>
+</nav>
+
+<main>
+
+    <!-- HERO -->
+    <div class="proj-hero">
+        <div class="proj-path">
+            <a href="../index.html" class="nav-back">← portfolio</a>
+            <span>~/projects</span><span class="sep"></span>
+            <span class="file">demo-001.cpp</span>
+        </div>
+        <h1 class="proj-title">Demo-001<span class="dim">.</span></h1>
+        <div class="proj-meta">
+            <span><span class="label">year:</span>2026</span>
+            <span><span class="label">role:</span>sole developer</span>
+            <span><span class="label">duration:</span>1 month</span>
+        </div>
+        <div class="proj-tags">
+            <span class="proj-tag">Unity</span>
+            <span class="proj-tag">C#</span>
+            <span class="proj-tag">HLSL</span>
+        </div>
+    </div>
+
+    <!-- MAIN MEDIA -->
+    <div class="proj-media">
+        <div class="media-placeholder">
+            <div class="icon">▶</div>
+            <div>screenshot.png / gameplay.gif / demo.mp4</div>
+            <code>&lt;img src="screenshot.png"&gt;  or  &lt;video src="demo.mp4" autoplay loop muted&gt;</code>
+        </div>
+    </div>
+
+    <!-- OVERVIEW -->
+    <div class="section">
+        <div class="section-label">// overview</div>
+        <div class="prose">
+            <p><strong>Demo-001</strong> is a solo developed 2D game, with the purpose to apply and reinforce the concepts and techniques learned during my studies. </p>
+        </div>
+    </div>
+
+    <!-- TECHNICAL CHALLENGES -->
+    <div class="section">
+        <div class="section-label">// technical_challenges</div>
+        <div class="challenges">
+            <div class="challenge">
+                <span class="challenge-num">01</span>
+                <div class="challenge-text"><strong>Real-time caustics</strong> — Simulating light refraction on the seafloor without a raytracer. Solved with a scrolling voronoi-based GLSL shader projected from above, blended into the diffuse channel using depth as a falloff mask.</div>
+            </div>
+            <div class="challenge">
+                <span class="challenge-num">02</span>
+                <div class="challenge-text"><strong>Procedural terrain at 60fps</strong> — Streaming chunks without frame drops using a background thread for noise sampling and a job queue to mesh only when the camera was within a safe distance.</div>
+            </div>
+            <div class="challenge">
+                <span class="challenge-num">03</span>
+                <div class="challenge-text"><strong>Volumetric light shafts</strong> — Screen-space radial blur sampled from the sun projected to clip space, multiplied by a depth-based density mask. Fixed per-frame cost, no extra geometry.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="section">
+        <div class="section-label">// gallery</div>
+        <div class="gallery">
+            <div class="gallery-item">WIP</div>
+            <div class="gallery-item">WIP</div>
+            <div class="gallery-item">WIP</div>
+            <div class="gallery-item">WIP</div>
+        </div>
+    </div>
+
+    <!-- LINKS -->
+    <div class="section">
+        <div class="section-label">// links</div>
+        <div class="proj-links">
+            <a href="https://github.com/DanieleSoranzio/Demo-001" target="_blank" class="proj-link primary">GitHub repo ↗</a>
+            <!--<a href="#" class="proj-link">Live demo ↗</a>-->
+            <a href="https://docs.google.com/document/d/1MtnLPDjfLaiaKmulWeZlHJ4z9V6vmRMlYmbeOIwU_8s/edit?usp=sharing" class="proj-link">Documentation ↗</a>
+        </div>
+    </div>
+
+    <!-- PREV / NEXT -->
+    <div class="proj-nav">
+        <!-- Questa è il prev, tenere commentato se è il primo progetto nella lista-->
+        <a href="Project-Symbiosis.html" class="proj-nav-item prev">
+            <span class="proj-nav-label">← previous</span>
+            <span class="proj-nav-title">Project Symbiosis</span>
+        </a>
+        <!-- Questa è il next, tenere commentato se è l`ultimo progetto nella lista-->
+        <a href="raymarched-slime.html" class="proj-nav-item next">
+            <span class="proj-nav-label">next →</span>
+            <span class="proj-nav-title">Raymarched-Slime</span>
+        </a>
+    </div>
+
+</main>
+<script src="projectscript.js"></script>
+</body>
+</html>
