@@ -172,12 +172,11 @@ nav {
 .hero-right { display: flex; align-items: center; justify-content: flex-end; animation: fadeIn 1s 0.4s var(--ease) both; }
 .hero-media {
     position: relative;
-    width: 280px; height: min(340px, calc(100dvh - 10rem));
+    width: 960px; height: min(600px, calc(100dvh - 10rem));
     border-radius: 8px; overflow: hidden;
     border: 1px solid var(--border);
     background: #010409;
     box-shadow: 0 0 0 1px var(--faint), 0 24px 48px rgba(0,0,0,0.6);
-    margin-right: 20rem;
 }
 /* fake window chrome */
 .hero-media::before {
