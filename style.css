@@ -172,13 +172,16 @@ nav {
 .hero-right { display: flex; align-items: center; justify-content: flex-end; animation: fadeIn 1s 0.4s var(--ease) both; }
 .hero-media {
     position: relative;
-    width: 960px; height: min(600px, calc(100dvh - 10rem));
+    width: clamp(280px, 35vw, 920px);
+    aspect-ratio: 16/10;
+    height: auto;
+    min-width: 280px;
     border-radius: 8px; overflow: hidden;
     border: 1px solid var(--border);
     background: #010409;
     box-shadow: 0 0 0 1px var(--faint), 0 24px 48px rgba(0,0,0,0.6);
 }
-/* fake window chrome */
+
 .hero-media::before {
     content: '● ● ●';
     position: absolute; top: 0; left: 0; right: 0; z-index: 3;
@@ -190,6 +193,16 @@ nav {
     pointer-events: none;
 }
 #gameCanvas { position: absolute; top: 24px; left: 0; display: block; }
+
+.hero-media iframe {
+    position: absolute;
+    top: 24px; left: 0;
+    width: 100%;
+    height: calc(100% - 24px);
+    border: none;
+    z-index: 1;
+}
+
 .game-label {
     position: absolute; bottom: 0.6rem; left: 50%; transform: translateX(-50%);
     font-size: 0.48rem; letter-spacing: 0.1em; text-transform: uppercase;
@@ -356,7 +369,7 @@ nav {
 
 /* RESPONSIVE */
 @media (max-width: 760px) {
-    /* NAV — nascondi link e right, mostra solo logo */
+    
     .nav-links { display: none; }
     .nav-right  { display: none; }
     nav { height: 38px; }

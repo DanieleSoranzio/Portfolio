@@ -1,0 +1,5 @@
+﻿[[headers]]
+  for = "/projects/WebBuild/Build/*.unityweb"
+  [headers.values]
+    Content-Encoding = "br"
+    Content-Type = "application/octet-stream"
