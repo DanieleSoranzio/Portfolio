@@ -176,10 +176,12 @@ nav {
     aspect-ratio: 16/10;
     height: auto;
     min-width: 280px;
-    border-radius: 8px; overflow: hidden;
+    border-radius: 8px;
+    /*overflow: hidden;*/
     border: 1px solid var(--border);
     background: #010409;
     box-shadow: 0 0 0 1px var(--faint), 0 24px 48px rgba(0,0,0,0.6);
+    padding-bottom: 42px;
 }
 
 .hero-media::before {
@@ -201,6 +203,7 @@ nav {
     height: calc(100% - 24px);
     border: none;
     z-index: 1;
+    padding-bottom: 26px;
 }
 
 .game-label {
