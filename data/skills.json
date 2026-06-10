@@ -1,0 +1,24 @@
+{
+  "skills": [
+    {
+      "id": "Csharp",
+      "spriteUrl": "https://danielesoranzio.dev/Assets/skills/csharp.png",
+      "catchable": true
+    },
+    {
+      "id": "Cpp",
+      "spriteUrl": "https://danielesoranzio.dev/Assets/skills/Cpp.png",
+      "catchable": true
+    },
+    {
+      "id": "UnityEngine",
+      "spriteUrl": "https://danielesoranzio.dev/Assets/skills/Unity.png",
+      "catchable": true
+    },
+    {
+      "id": "CSS",
+      "spriteUrl": "https://danielesoranzio.dev/Assets/skills/CSS.png",
+      "catchable": false
+    }
+  ]
+}
