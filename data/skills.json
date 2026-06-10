@@ -19,6 +19,41 @@
       "id": "CSS",
       "spriteUrl": "https://danielesoranzio.dev/Assets/skills/CSS.png",
       "catchable": false
+    },
+    {
+      "id": "Blender",
+      "spriteUrl": "https://danielesoranzio.dev/Assets/skills/Blender.png",
+      "catchable": false
+    },
+    {
+      "id": "GitHub",
+      "spriteUrl": "https://danielesoranzio.dev/Assets/skills/GitHub.png",
+      "catchable": true
+    },
+    {
+      "id": "JetBrainRider",
+      "spriteUrl": "https://danielesoranzio.dev/Assets/skills/JetBrainRider.png",
+      "catchable": true
+    },
+    {
+     "id": "JS",
+     "spriteUrl": "https://danielesoranzio.dev/Assets/skills/JS.png",
+      "catchable": false
+    },
+    {
+      "id": "UnrealEngine",
+      "spriteUrl": "https://danielesoranzio.dev/Assets/skills/UnrealEngine.png",
+      "catchable": true
+    },
+    {
+      "id": "Photoshop",
+      "spriteUrl": "https://danielesoranzio.dev/Assets/skills/Photoshop.png",
+      "catchable": false
+    },
+    {
+      "id": "VsCode",
+      "spriteUrl": "https://danielesoranzio.dev/Assets/skills/VsCode.png",
+      "catchable": true
     }
   ]
 }
