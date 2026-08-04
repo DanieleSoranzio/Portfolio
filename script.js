@@ -1,4 +1,43 @@
-﻿  // ZOOM
+﻿   // Certifications marquee — JS-driven so the loop is mathematically seamless
+    // (duplicates enough real chips to fill the strip, then loops by exactly one set-width)
+    // Runs immediately: this script tag sits at the end of <body>, so the DOM above it
+    // is already fully parsed — no need to wait for 'load' or 'DOMContentLoaded'.
+    (function initCertsMarquee(){
+      const list = document.getElementById('certsList');
+      if(!list) { console.warn('certsList not found'); return; }
+      const track = list.parentElement;
+      const originals = Array.from(list.children);
+      if(originals.length === 0) return;
+
+      // duplicate the original chips until we have at least 2 full sets across the visible track
+      let guard = 0;
+      while (list.scrollWidth < track.offsetWidth * 2 + 400 && guard < 20) {
+        originals.forEach(node => list.appendChild(node.cloneNode(true)));
+        guard++;
+      }
+
+      const gap = 0.9 * parseFloat(getComputedStyle(document.documentElement).fontSize); // matches CSS gap
+      let oneSetWidth = 0;
+      originals.forEach(node => { oneSetWidth += node.getBoundingClientRect().width + gap; });
+
+      if (oneSetWidth <= 0) { console.warn('certs marquee: could not measure width'); return; }
+
+      let x = 0;
+      const speed = 40; // px per second
+      let last = performance.now();
+
+      function tick(now){
+        const dt = (now - last) / 1000;
+        last = now;
+        x -= speed * dt;
+        if (x <= -oneSetWidth) x += oneSetWidth;
+        list.style.transform = `translateX(${x}px)`;
+        requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    })();
+
+  // ZOOM
     const bar    = document.getElementById('progress');
     const panels = Array.from(document.querySelectorAll('.panel-wrap'));
     const last   = panels.length - 1;
@@ -99,3 +138,38 @@
     fetchTrack();
     setInterval(fetchTrack, 30000);
 })();
+
+  (function initCertsMarquee(){
+    const list = document.getElementById('certsList');
+    if(!list) { console.warn('certsList not found'); return; }
+    const track = list.parentElement;
+    const originals = Array.from(list.children);
+    if(originals.length === 0) return;
+
+    // duplicate the original chips until we have at least 2 full sets across the visible track
+    let guard = 0;
+    while (list.scrollWidth < track.offsetWidth * 2 + 400 && guard < 20) {
+      originals.forEach(node => list.appendChild(node.cloneNode(true)));
+      guard++;
+    }
+
+    const gap = 0.9 * parseFloat(getComputedStyle(document.documentElement).fontSize); // matches CSS gap
+    let oneSetWidth = 0;
+    originals.forEach(node => { oneSetWidth += node.getBoundingClientRect().width + gap; });
+
+    if (oneSetWidth <= 0) { console.warn('certs marquee: could not measure width'); return; }
+
+    let x = 0;
+    const speed = 40;
+    let last = performance.now();
+
+    function tick(now){
+      const dt = (now - last) / 1000;
+      last = now;
+      x -= speed * dt;
+      if (x <= -oneSetWidth) x += oneSetWidth;
+      list.style.transform = `translateX(${x}px)`;
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  })();

@@ -5,119 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Demo-001 — Daniele Soranzio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="projectstyle.css">
-    <meta name="description" content="Demo-001 — Unity personal project by Daniele Soranzio.">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <meta name="description" content="Demo-001 — Unity 2D game project by Daniele Soranzio.">
     <meta property="og:title" content="Demo-001 — Daniele Soranzio">
     <meta property="og:url" content="https://danielesoranzio.dev/projects/demo-001.html">
     <meta property="og:type" content="website">
+
 </head>
 <body>
 
-<nav>
-    <a href="../index.html" class="nav-back">← portfolio</a>
-    <div class="nav-breadcrumb">
-        <span>projects</span><span>/</span><span class="current">Demo-001</span>
-    </div>
-    <div class="nav-right">
-        <a href="https://github.com/DanieleSoranzio/Demo-001" target="_blank">GitHub ↗</a>
-    </div>
-</nav>
+<header>
+    <nav>
+        <a href="../index.html" class="logo">Daniele Soranzio</a>
+        <ul class="navlinks">
+            <li><a href="../index.html#projects">All projects</a></li>
+        </ul>
+        <a href="https://github.com/DanieleSoranzio/Slime-Raymarch-Plugin" target="_blank" class="navcta">GitHub ↗</a>
+    </nav>
+</header>
 
-<main>
+<div class="wrap">
 
-    <!-- HERO -->
-    <div class="proj-hero">
-        <div class="proj-path">
-            <a href="../index.html" class="nav-back">← portfolio</a>
-            <span>~/projects</span><span class="sep"></span>
-            <span class="file">demo-001.cpp</span>
+    <section class="hero">
+        <h1 class="name">Demo-001</h1>
+        <p class="role">2026 · sole developer </p>
+        <div class="tagrow">
+            <span class="tag">C#</span><span class="tag">Unity</span>
         </div>
-        <h1 class="proj-title">Demo-001<span class="dim">.</span></h1>
-        <div class="proj-meta">
-            <span><span class="label">year:</span>2026</span>
-            <span><span class="label">role:</span>sole developer</span>
-            <span><span class="label">duration:</span>1 month</span>
+        <div class="cta-row">
+            <a href="https://github.com/DanieleSoranzio/Demo-001" target="_blank" class="btn btn-primary">GitHub repo →</a>
+            <a href="https://docs.google.com/document/d/1MtnLPDjfLaiaKmulWeZlHJ4z9V6vmRMlYmbeOIwU_8s/edit?usp=sharing" target="_blank" class="btn btn-ghost">Documentation</a>
         </div>
-        <div class="proj-tags">
-            <span class="proj-tag">Unity</span>
-            <span class="proj-tag">C#</span>
-            <span class="proj-tag">HLSL</span>
-        </div>
-    </div>
+    </section>
 
-    <!-- MAIN MEDIA -->
-    <div class="proj-media">
-        <div class="media-placeholder">
-            <div class="icon">▶</div>
-            <div>screenshot.png / gameplay.gif / demo.mp4</div>
-            <code>&lt;img src="screenshot.png"&gt;  or  &lt;video src="demo.mp4" autoplay loop muted&gt;</code>
-        </div>
-    </div>
+    <div class="media"><img src="" alt="WIP"></div>
 
-    <!-- OVERVIEW -->
-    <div class="section">
-        <div class="section-label">// overview</div>
-        <div class="prose">
-            <p><strong>Demo-001</strong> is a solo developed 2D game, with the purpose to apply and reinforce the concepts and techniques learned during my studies. </p>
-        </div>
-    </div>
+    <section class="sec">
+        <div class="sec-head"><span class="sec-title">About</span></div>
+        <p class="prose"><strong>Demo-001</strong> is a solo developed 2D game, with the purpose to apply and reinforce the concepts and techniques learned during my studies. </p>
+    </section>
 
-    <!-- TECHNICAL CHALLENGES -->
-    <div class="section">
-        <div class="section-label">// technical_challenges</div>
-        <div class="challenges">
-            <div class="challenge">
-                <span class="challenge-num">01</span>
-                <div class="challenge-text"><strong>//</strong> WIP</div>
+    <section class="sec">
+        <div class="sec-head"><span class="sec-title">Gallery</span></div>
+        <div class="gallery-wrap">
+            <button class="g-arrow left" aria-label="Scroll left" onclick="document.getElementById('gal-file').scrollBy({left:-320,behavior:'smooth'})">←</button>
+            <div class="gallery" id="gal-file">
+                <div class="g-item"><img src="" alt="WIP" style="object-position:top;"></div>
+                <div class="g-item"><img src="" alt="WIP" style="object-position:top;"></div>
+                <div class="g-item"><img src="" alt="WIP"></div>
+                <div class="g-item"><img src="" alt="WIP"></div>
             </div>
-            <div class="challenge">
-                <span class="challenge-num">02</span>
-                <div class="challenge-text"><strong>//</strong> WIP</div>
-            </div>
-            <div class="challenge">
-                <span class="challenge-num">03</span>
-                <div class="challenge-text"><strong>//</strong> WIP</div>
-            </div>
+            <button class="g-arrow right" aria-label="Scroll right" onclick="document.getElementById('gal-file').scrollBy({left:320,behavior:'smooth'})">→</button>
         </div>
-    </div>
+    </section>
 
-    <!-- GALLERY -->
-    <div class="section">
-        <div class="section-label">// gallery</div>
-        <div class="gallery">
-            <div class="gallery-item">WIP</div>
-            <div class="gallery-item">WIP</div>
-            <div class="gallery-item">WIP</div>
-            <div class="gallery-item">WIP</div>
-        </div>
-    </div>
+    <div class="lightbox" id="lightbox"><img id="lightboxImg" src="" alt=""></div>
 
-    <!-- LINKS -->
-    <div class="section">
-        <div class="section-label">// links</div>
-        <div class="proj-links">
-            <a href="https://github.com/DanieleSoranzio/Demo-001" target="_blank" class="proj-link primary">GitHub repo ↗</a>
-            <!--<a href="#" class="proj-link">Live demo ↗</a>-->
-            <a href="https://docs.google.com/document/d/1MtnLPDjfLaiaKmulWeZlHJ4z9V6vmRMlYmbeOIwU_8s/edit?usp=sharing" class="proj-link">Documentation ↗</a>
-        </div>
-    </div>
+    <nav class="proj-nav">
+        <a href="Project-Symbiosis.html"><span class="lbl">← previous</span>Project Symbiosis</a>
+        <a href="raymarched-slime.html" class="next"><span class="lbl">next →</span>Raymarched-Slime</a>
+    </nav>
 
-    <!-- PREV / NEXT -->
-    <div class="proj-nav">
-        <!-- Questa è il prev, tenere commentato se è il primo progetto nella lista-->
-        <a href="Project-Symbiosis.html" class="proj-nav-item prev">
-            <span class="proj-nav-label">← previous</span>
-            <span class="proj-nav-title">Project Symbiosis</span>
-        </a>
-        <!-- Questa è il next, tenere commentato se è l`ultimo progetto nella lista-->
-        <a href="raymarched-slime.html" class="proj-nav-item next">
-            <span class="proj-nav-label">next →</span>
-            <span class="proj-nav-title">Raymarched-Slime</span>
-        </a>
-    </div>
+</div>
 
-</main>
+<footer>© 2026 Daniele Soranzio</footer>
+
 <script src="projectscript.js"></script>
 </body>
 </html>

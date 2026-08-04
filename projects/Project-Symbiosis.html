@@ -3,120 +3,77 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Project Symbiosis — Daniele Soranzio</title>
+    <title>Project-Symbiosis — Daniele Soranzio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="projectstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <meta name="description" content="Project Symbiosis  — Unreal Engine team made game.">
     <meta property="og:title" content="Project Symbiosis — Daniele Soranzio">
     <meta property="og:url" content="https://danielesoranzio.dev/projects/Project-Symbiosis.html">
     <meta property="og:type" content="website">
 </head>
+
 <body>
+<header>
+    <nav>
+        <a href="../index.html" class="logo">Daniele Soranzio</a>
+        <ul class="navlinks">
+            <li><a href="../index.html#projects">All projects</a></li>
+        </ul>
+        <a href="https://soransen.itch.io/project-symbiosis" target="_blank" class="navcta">Itch.io ↗</a>
+    </nav>
+</header>
 
-<nav>
-    <a href="../index.html" class="nav-back">← portfolio</a>
-    <div class="nav-breadcrumb">
-        <span>projects</span><span>/</span><span class="current">Project Symbiosis</span>
-    </div>
-    <div class="nav-right">
-        <a href="https://eventhorizonschool.itch.io/project-symbiosis" target="_blank">Itch.io ↗</a>
-    </div>
-</nav>
+<div class="wrap">
 
-<main>
-
-    <!-- HERO -->
-    <div class="proj-hero">
-        <div class="proj-path">
-            <a href="../index.html" class="nav-back">← portfolio</a>
-            <span>~/projects</span><span class="sep"></span>
-            <span class="file">project-symbiosis.cpp</span>
+    <section class="hero">
+        <h1 class="name">Project-Symbiosis</h1>
+        <p class="role">2025 · Game Programmer · 5 months</p>
+        <div class="tagrow">
+            <span class="tag">C++</span><span class="tag">GLSL</span><span class="tag">HLSL</span><span class="tag">Unreal Engine</span>
         </div>
-        <h1 class="proj-title">Project Symbiosis<span class="dim">.</span></h1>
-        <div class="proj-meta">
-            <span><span class="label">year:</span>2025</span>
-            <span><span class="label">role:</span>Game Programmer</span>
-            <span><span class="label">duration:</span>5 months</span>
+        <div class="cta-row">
+            <a href="https://soransen.itch.io/project-symbiosis" target="_blank" class="btn btn-primary">Itch.io →</a>
+            <a href="https://docs.google.com/document/d/15F9Cq66AvK8C95DruRhvXhQ9rCHGmciBgDTiuz03Tq4/edit?usp=sharing" target="_blank" class="btn btn-ghost">Documentation</a>
         </div>
-        <div class="proj-tags">
-            <span class="proj-tag">GLSL</span>
-            <span class="proj-tag">HLSL</span>
-            <span class="proj-tag">C++</span>
-            <span class="proj-tag">Unreal Engine</span>
+    </section>
 
-        </div>
-    </div>
-
-    <!-- MAIN MEDIA -->
-    <div class="proj-media">
+    <div class="media">
         <iframe src="https://www.youtube.com/embed/D1vWWUvG57k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:100%;"></iframe>
     </div>
 
-    <!-- OVERVIEW -->
-    <div class="section">
-        <div class="section-label">// overview</div>
-        <div class="prose">
-            <p><strong>Project Symbiosis</strong> Project: Symbiosis is a roguelike first-person shooter in which the player impersonates a lonely clone in a laboratory overrun by mutated monsters.</p>
-            <p>A strangely friendly symbiont is permanently attached to you, awaiting to be fed. Kill as many monsters as you can to make your amorphous friend level up and grant you various passive and active abilities.
-            </p>
-        </div>
-    </div>
+    <section class="sec">
+        <div class="sec-head"><span class="sec-title">About</span></div>
+        <p class="prose"><strong>Project Symbiosis</strong> Project: Symbiosis is a roguelike first-person shooter in which the player impersonates a lonely clone in a laboratory overrun by mutated monsters.
+            A strangely friendly symbiont is permanently attached to you, awaiting to be fed. Kill as many monsters as you can to make your amorphous friend level up and grant you various passive and active abilities.
+            Worked mainly on Enemies Behavior and Environmental Objects.</p>
+    </section>
 
-    <!-- TECHNICAL CHALLENGES -->
-    <div class="section">
-        <div class="section-label">// technical_challenges</div>
-        <div class="challenges">
-            <div class="challenge">
-                <span class="challenge-num">01</span>
-                <div class="challenge-text"><strong>Team Environment</strong> — Working with a team with different personalities, characteristics and ideas. Managed to have a common goal of the project by having day by day meetings. </div>
+    <section class="sec">
+        <div class="sec-head"><span class="sec-title">Gallery</span></div>
+        <div class="gallery-wrap">
+            <button class="g-arrow left" aria-label="Scroll left" onclick="document.getElementById('gal-file').scrollBy({left:-320,behavior:'smooth'})">←</button>
+            <div class="gallery" id="gal-file">
+                <div class="g-item"><img src="../Assets/BossRoomPS.png" alt="screenshot 01" style="object-position: top;"> </div>
+                <div class="g-item"><img src="../Assets/EnemyPS.png" alt="screenshot 01" style="object-position: top;"> </div>
+                <div class="g-item"><img src="../Assets/introPS.png" alt="screenshot 01" > </div>
+                <div class="g-item"><img src="../Assets/BTSnipptePS.png" alt="screenshot 01"> </div>
             </div>
-            <div class="challenge">
-                <span class="challenge-num">02</span>
-                <div class="challenge-text"><strong>Modular AI</strong> — Creating AI that feels alive and designer friendly. Worked on this challenge by creating separated tasks with as less casts as possible, in order to leave everything to the designers choice.</div>
-            </div>
-            <div class="challenge">
-                <span class="challenge-num">03</span>
-                <div class="challenge-text"><strong>Real Time Environment</strong> — Making the world feel alive with the use of shaders. Worked on this challenge and created a modular shape with noise functions, giving the designers and 3D artits a tool that will help creating the environment. </div>
-            </div>
+            <button class="g-arrow right" aria-label="Scroll right" onclick="document.getElementById('gal-file').scrollBy({left:320,behavior:'smooth'})">→</button>
         </div>
-    </div>
-    
-    <!-- GALLERY -->
-    <div class="section">
-        <div class="section-label">// gallery</div>
-        <div class="gallery">
-            <div class="gallery-item"><img src="../Assets/BossRoomPS.png" alt="screenshot 01" style="object-position: top;"> </div>
-            <div class="gallery-item"><img src="../Assets/EnemyPS.png" alt="screenshot 01" style="object-position: top;"> </div>
-            <div class="gallery-item"><img src="../Assets/introPS.png" alt="screenshot 01" style="object-position: top;"> </div>
-            <div class="gallery-item"><img src="../Assets/BTSnipptePS.png" alt="screenshot 01" style="object-position: top;"> </div>
-        </div>
-    </div>
+    </section>
 
-    <!-- LINKS -->
-    <div class="section">
-        <div class="section-label">// links</div>
-        <div class="proj-links">
-            <a href="https://eventhorizonschool.itch.io/project-symbiosis" target="_blank" class="proj-link  primary">Itch.io ↗</a>
-            <a href="https://docs.google.com/document/d/15F9Cq66AvK8C95DruRhvXhQ9rCHGmciBgDTiuz03Tq4/edit?usp=sharing" target="_blank" class="proj-link">Documentation ↗</a>
-        </div>
-    </div>
+    <div class="lightbox" id="lightbox"><img id="lightboxImg" src="" alt=""></div>
 
-    <!-- PREV / NEXT -->
-    <div class="proj-nav">
-        <!-- Questa è il prev, tenere commentato se è il primo progetto nella lista-->
-        <a href="ffta.html" class="proj-nav-item prev">
-            <span class="proj-nav-label">← previous</span>
-            <span class="proj-nav-title">Final Fantasy Tactics Advanced</span>
-        </a>
-        <!-- Questa è il next, tenere commentato se è l`ultimo progetto nella lista-->
-        <a href="demo-001.html" class="proj-nav-item next">
-            <span class="proj-nav-label">next →</span>
-            <span class="proj-nav-title">Demo-001</span>
-        </a>
-    </div>
+    <nav class="proj-nav">
+        <a href="ffta.html"><span class="lbl">← previous</span>Final Fantasy Tactics Advanced</a>
+        <a href="demo-001.html" class="next"><span class="lbl">next →</span>Demo-001</a>
+    </nav>
 
-</main>
+</div>
+
+<footer>© 2026 Daniele Soranzio</footer>
+
 <script src="projectscript.js"></script>
 </body>
 </html>
