@@ -25,8 +25,9 @@
 <!--      <div id="unity-footer">-->
 <!--        <div id="unity-logo-title-footer"></div>-->
 <!--        <div id="unity-fullscreen-button"></div>-->
-       <div id="unity-build-title">CatchTheTechSkill</div>
-      </div>
+        <div id="unity-build-title">CatchTheSkill</div>
+<!--      </div>-->
+   </div>
     <script>
       var canvas = document.querySelector("#unity-canvas");
 
@@ -65,7 +66,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Soransen",
         productName: "CatchTheTechSkill",
-        productVersion: "1.0",
+        productVersion: "1.1",
         showBanner: unityShowBanner,
       };
 
@@ -114,8 +115,7 @@
         createUnityInstance(canvas, config, (progress) => {
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
               }).then((unityInstance) => {
-                document.querySelector("#unity-loading-bar").style.display = "none";
-                document.querySelector("#unity-logo").style.animation = 'none';
+                 document.querySelector("#unity-loading-bar").style.display = "none";
                 // document.querySelector("#unity-fullscreen-button").onclick = () => {
                 //   unityInstance.SetFullscreen(1);
                 // };
